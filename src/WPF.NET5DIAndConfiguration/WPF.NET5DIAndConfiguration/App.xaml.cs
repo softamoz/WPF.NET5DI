@@ -41,6 +41,8 @@ namespace WPF.NET5DIAndConfiguration
         private void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<MainWindow>();
+
+            services.AddSingleton(Configuration);
         }
     }
 }
